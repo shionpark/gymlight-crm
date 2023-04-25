@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Gym-light Fitness CRM(Customer Relationship Management)",
   "scripts": {
-    "dev": "nodemon --exec babel-node src/index.js"
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "repository": {
     "type": "git",

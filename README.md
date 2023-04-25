@@ -11,12 +11,12 @@ Gym-light Fitness CRM(Customer Relationship Management)
 
 /users/:id -> See User
 /users/logout -> Log Out
-/users/edit -> Edit MY Profile
-/users/delete -> Delete MY Profile
+/users/edit -> Edit User Profile
+/users/delete -> Delete User Profile
+/users/:id/attend -> See User's Attendance
+/users/:id/schedule -> See Trainer's Schedule
 
-/centers -> See Centers
-/centers/accounting -> See Accounting
 /centers/:id -> See Center
-/centers/:id/attendance -> See Attendance
-/centers/:id/lockers -> See Locker
-/centers/:id/sales -> See Sales
+/centers/:id/lockers -> Locker Management
+/centers/:id/attend -> Attendance Management
+/centers/:id/accounting -> Center's Sales
