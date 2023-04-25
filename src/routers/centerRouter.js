@@ -1,9 +1,8 @@
 import express from "express";
+import { sales } from "../controllers/centerController";
 
 const centerRouter = express.Router();
 
-const handleSalesCenter = (req, res) => res.send("Sales");
-
-centerRouter.get("/:id/sales", handleSalesCenter);
+centerRouter.get("/:id/sales", sales);
 
 export default centerRouter;
