@@ -1,0 +1,27 @@
+{
+  "name": "gymlight-crm",
+  "version": "1.0.0",
+  "description": "Gym-light Fitness CRM(Customer Relationship Management)",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bakkomcoder/gymlight-crm.git"
+  },
+  "author": "sypark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bakkomcoder/gymlight-crm/issues"
+  },
+  "homepage": "https://github.com/bakkomcoder/gymlight-crm#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.21.4",
+    "nodemon": "^2.0.22"
+  }
+}
