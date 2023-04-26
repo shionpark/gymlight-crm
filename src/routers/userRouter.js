@@ -1,20 +1,21 @@
 import express from "express";
+
 import {
   see,
-  edit,
-  logout,
-  remove,
+  search,
   attendance,
-  schedule,
+  oneSee,
+  oneSearch,
+  oneAttendance,
 } from "../controllers/userController";
 
 const userRouter = express.Router();
 
-userRouter.get("/edit", edit);
-userRouter.get("/delete", remove);
-userRouter.get("/logout", logout);
-userRouter.get("/:id(\\d+)", see);
-userRouter.get("/:id(\\d+)/attend", attendance);
-userRouter.get("/:id(\\d+)/schedule", schedule);
+userRouter.get("/", see);
+userRouter.get("/search", search);
+userRouter.get("/attend", attendance);
+userRouter.get("/:id", oneSee);
+userRouter.get("/:id/search", oneSearch);
+userRouter.get("/:id/attend", oneAttendance);
 
 export default userRouter;

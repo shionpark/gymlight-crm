@@ -1,22 +1,36 @@
 # Gym-Light CRM
 
-Gym-light Fitness CRM(Customer Relationship Management)
+Gymlight Fitness CRM(Customer Relationship Management)
 
 ## Router
 
 / -> Home
 /join -> Join
 /login -> Login
-/search -> Search
+/logout -> Log Out
 
-/users/:id -> See User
-/users/logout -> Log Out
-/users/edit -> Edit User Profile
-/users/delete -> Delete User Profile
-/users/:id/attend -> See User's Attendance
-/users/:id/schedule -> See Trainer's Schedule
+#### center
 
-/centers/:id -> See Center
-/centers/:id/lockers -> Locker Management
-/centers/:id/attend -> Attendance Management
-/centers/:id/accounting -> Center's Sales
+/sales -> All center Sales
+/:id/lockers -> One Center Lockers
+/:id/accounting -> One Center Accounting
+
+#### Trainer
+
+/trainers -> All Center Trainers
+/trainers/search -> Search Trainers
+/trainers/attend -> Trainers Attendance
+/trainers/schedule -> Trainers Schedule
+/trainers/:id -> One Center Trainers
+/trainers/:id/search -> One Center Search Trainers
+/trainers/:id/attend -> One Center Trainers Attendance
+/trainers/:id/schedule -> One Center Trainers Schedule
+
+#### User
+
+/users -> All Center Users
+/users/search -> Search Users
+/users/attend -> Users Attendance
+/users/:id -> One Center Users
+/users/:id/search -> One Center Search Users
+/users/:id/attend -> One Center Users Attendance

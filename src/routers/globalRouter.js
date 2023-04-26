@@ -1,12 +1,20 @@
 import express from "express";
-import { home } from "../controllers/centerController";
-import { search, join, login } from "../controllers/userController";
+
+import {
+  home,
+  sales,
+  locker,
+  accounting,
+} from "../controllers/centerController";
 
 const globalRouter = express.Router();
 
 globalRouter.get("/", home);
-globalRouter.get("/join", join);
-globalRouter.get("/login", login);
-globalRouter.get("/search", search);
+globalRouter.get("/sales", sales);
+globalRouter.get("/:id/lockers", locker);
+globalRouter.get("/:id/accounting", accounting);
+// globalRouter.get("/join", join);
+// globalRouter.get("/login", login);
+// globalRouter.get("/logout", logout);
 
 export default globalRouter;
