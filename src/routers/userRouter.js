@@ -2,20 +2,18 @@ import express from "express";
 
 import {
   see,
-  search,
+  edit,
+  upload,
+  lockers,
   attendance,
-  oneSee,
-  oneSearch,
-  oneAttendance,
 } from "../controllers/userController";
 
 const userRouter = express.Router();
 
 userRouter.get("/", see);
-userRouter.get("/search", search);
+userRouter.get("/edit", edit);
+userRouter.get("/upload", upload);
+userRouter.get("/lockers", lockers);
 userRouter.get("/attend", attendance);
-userRouter.get("/:id", oneSee);
-userRouter.get("/:id/search", oneSearch);
-userRouter.get("/:id/attend", oneAttendance);
 
 export default userRouter;

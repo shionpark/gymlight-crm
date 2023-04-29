@@ -1,7 +1,5 @@
-export const see = (req, res) => res.send("See All Center Users");
-export const search = (req, res) => res.send("Search Users");
+export const see = (req, res) => res.send("See Users");
+export const edit = (req, res) => res.send("Edit Users");
+export const upload = (req, res) => res.send("Upload Users");
+export const lockers = (req, res) => res.send("User Lockers");
 export const attendance = (req, res) => res.send("Users Attendance");
-export const oneSee = (req, res) => res.send("One Center Users");
-export const oneSearch = (req, res) => res.send("One Center Search Users");
-export const oneAttendance = (req, res) =>
-  res.send("One Center Users Attendance");

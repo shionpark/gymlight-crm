@@ -2,24 +2,18 @@ import express from "express";
 
 import {
   see,
-  search,
-  attendance,
+  edit,
+  upload,
+  attend,
   schedule,
-  oneSee,
-  oneSearch,
-  oneAttendance,
-  oneSchedule,
 } from "../controllers/trainerController";
 
 const trainerRouter = express.Router();
 
 trainerRouter.get("/", see);
-trainerRouter.get("/search", search);
-trainerRouter.get("/attend", attendance);
+trainerRouter.get("/edit", edit);
+trainerRouter.get("/upload", upload);
+trainerRouter.get("/attend", attend);
 trainerRouter.get("/schedule", schedule);
-trainerRouter.get("/:id", oneSee);
-trainerRouter.get("/:id/search", oneSearch);
-trainerRouter.get("/:id/attend", oneAttendance);
-trainerRouter.get("/:id/schedule", oneSchedule);
 
 export default trainerRouter;
