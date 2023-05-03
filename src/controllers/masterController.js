@@ -1,4 +1,5 @@
-export const home = (req, res) => res.send("Home");
+export const home = (req, res) => res.render("home", { pageTitle: "Home" });
 export const join = (req, res) => res.send("Join");
 export const login = (req, res) => res.send("Login");
 export const logout = (req, res) => res.send("Log Out");
+export const accounting = (req, res) => res.send("회계");

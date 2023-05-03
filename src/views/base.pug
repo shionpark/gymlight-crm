@@ -11,13 +11,13 @@ html(lang="en")
                     li 
                         a(href="/") HOME
                     li 
-                        a(href="/:id/users") 회원 관리 
+                        a(href="/search") 회원 관리 
                     li 
-                        a(href="/users/:id/attend") 출석부
+                        a(href="/users/attend") 출석부
                     li 
-                        a(href="/centers/:id/lockers") 락커
+                        a(href="/users/lockers") 락커
                     li 
-                        a(href="/centers/:id/accounting") 회계
+                        a(href="/accounting") 회계
         main
             block content
     include partials/footer
