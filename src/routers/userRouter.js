@@ -1,19 +1,11 @@
 import express from "express";
 
-import {
-  see,
-  edit,
-  upload,
-  lockers,
-  attendance,
-} from "../controllers/userController";
+import { edit, upload, remove } from "../controllers/userController";
 
 const userRouter = express.Router();
 
-userRouter.get("/", see);
 userRouter.get("/edit", edit);
 userRouter.get("/upload", upload);
-userRouter.get("/lockers", lockers);
-userRouter.get("/attend", attendance);
+userRouter.get("/remove", remove);
 
 export default userRouter;
